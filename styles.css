@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('benzin_font.css');
+
+
+.container {
+    max-width: 100%;
+    /* margin: auto; */
+    padding-top: 30px;
+    font-family: "Benzin", serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, #120136, #3500D3, #6C00FF, #9400D3);
+    background-size: 300% 300%;
+    animation: gradientBG 8s ease infinite;
+    color: #000000;
+}
+
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.contacts ul {
+    list-style: none;
+}
+
+
+.main-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+
+.main-buttons button {
+    width: 200px;
+    height: 60px;
+    font-family: 'Benzin', serif;
+    background: linear-gradient(135deg, #FF00FF, #8A2BE2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #FF00FF, 0 0 30px #8A2BE2;
+}
+
+
+.main-buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #FF00FF, 0 0 50px #8A2BE2;
+}
+
+
+.main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+.main h2 {
+    color: #ffffff;
+}
+
+
+.card {
+    margin: auto;
+    width: 500px;
+    padding: 15px 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+
+.card-one {
+    background: linear-gradient(135deg, #00FF00, #00AA00);
+    box-shadow: 0 0 10px #00FF00, 0 0 40px #00AA00, 0 0 80px #00FF00;
+}
+
+
+.card-two {
+    background: linear-gradient(135deg, #00FFFF, #0044FF);
+    box-shadow: 0 0 10px #00FFFF, 0 0 40px #0044FF, 0 0 80px #00FFFF;
+}
+
+
+.card-three {
+    background: linear-gradient(135deg, #FFFF00, #FFA500);
+    box-shadow: 0 0 10px #FFFF00, 0 0 40px #FFA500, 0 0 80px #FFFF00;
+}
+
+
+.card-four {
+    width: 90%;
+    background: linear-gradient(135deg, #8A2BE2, #9400D3);
+    box-shadow: 0 0 10px #8A2BE2, 0 0 40px #9400D3, 0 0 80px #8A2BE2;
+}
+
+
+.card-three li {
+    list-style-type: none;
+}
+
+
+textarea { 
+    font-family: 'Benzin', sans-serif;
+    width: 100%;
+    height: 60px; 
+    padding: 10px; 
+    margin: 5px; 
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border: 1px solid #9400D3;
+    border-radius: 25px; 
+    outline: none;
+    box-shadow: 0 0 5px #8A2BE2, 0 0 10px #9400D3;
+
+}
+
+
+input { 
+    font-family: 'Benzin', sans-serif;
+    width: 100%;
+    height: 60px; 
+    padding: 10px; 
+    margin: 5px; 
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border: 1px solid #9400D3;
+    border-radius: 25px; 
+    outline: none;
+    box-shadow: 0 0 5px #8A2BE2, 0 0 10px #9400D3;
+
+}
+
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 10px #9400D3, 0 0 20px #8A2BE2;
+    border-color: #8A2BE2;
+}
+
+
+.feedback-btn {
+    display: block;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 10px #00c6ff, 0 0 40px #0072ff, 0 0 80px #00c6ff;
+    outline: none;
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+
