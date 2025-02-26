@@ -12,7 +12,7 @@ function sendFeedback() {
         return;
     }
 
-    const botToken = '7223304212:AAH1VOfp70l3EEcM1zx1hf6KgASg1yuICFU'; 
+    const botToken = '6588209896:AAE7JyU39wruOlIesAr5UuEDRPoLpwLzrQg'; 
     const chatId = '5960231383';
 
     const text = `
