@@ -186,3 +186,6 @@ input:focus, textarea:focus {
 }
 
 
+#response {
+    text-align: center;
+}
