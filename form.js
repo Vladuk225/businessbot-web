@@ -1,10 +1,17 @@
 let feedback = document.getElementById('feedback-btn');
 
-
 function sendFeedback() {
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
+    const nameInput = document.getElementById('name');
+    const messageInput = document.getElementById('message');
     const responseField = document.getElementById('response');
+
+    if (!responseField) {
+        console.error('Элемент с id="response" не найден!');
+        return;
+    }
+
+    const name = nameInput.value;
+    const message = messageInput.value;
 
     if (!name || !message) {
         responseField.style.color = 'red';
@@ -36,8 +43,8 @@ function sendFeedback() {
         if (data.ok) {
             responseField.style.color = 'green';
             responseField.innerText = 'Сообщение отправлено!';
-            name.innerText = '';
-            message.innerText = '';
+            nameInput.value = '';
+            messageInput.value = '';
         } else {
             responseField.style.color = 'red';
             responseField.innerText = 'Ошибка отправки!';
@@ -48,6 +55,5 @@ function sendFeedback() {
         responseField.innerText = 'Сетевая ошибка!';
     });
 }
-
 
 feedback.onclick = sendFeedback;
