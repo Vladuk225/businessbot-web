@@ -36,6 +36,8 @@ function sendFeedback() {
         if (data.ok) {
             responseField.style.color = 'green';
             responseField.innerText = 'Сообщение отправлено!';
+            name.innerText = ''
+            message.innerText = ''
         } else {
             responseField.style.color = 'red';
             responseField.innerText = 'Ошибка отправки!';
