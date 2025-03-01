@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BusinessBot</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="form.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/form.js" defer></script>
 </head>
 
 <body>
@@ -20,17 +20,22 @@
                 <a href="#info">
                     <button>О нас</button>
                 </a>
-                <a href="">
+                <a href="#doc">
                     <button>Команды</button>
                 </a>
                 <a href="#contacts">
                     <button>Контакты</button>
                 </a>
+                <a href="#support">
+                    <button>Поддержка</button>
+                </a>
             </div>
-            <img src="photo.jpg" alt="businessbot.jpg">
+            <img src="/static/photo.jpg" alt="businessbot.jpg">
         </div>
-        <div class="info" id="info">
-            <div class="card card-three" id="contacts">
+    
+        <!-- Раздел "Контакты" -->
+        <div class="info" id="contacts">
+            <div class="card card-three">
                 <h2>Контакты</h2>
                 <ul>
                     <li>
@@ -44,7 +49,7 @@
                     </li>
                 </ul>
             </div>
-
+    
             <div class="card card-two" id="doc">
                 <h2>Документация</h2>
                 <h3>Игры</h3>
@@ -109,13 +114,27 @@
                     6. 🧿 Плинко - Игра, где игрок ставит деньги и рискует свое
                 </p>
             </div>
-            <div class="card card-one">
+            <div class="card card-one" id="info">
                 <h2>О нас</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vel rem sed quo modi quaerat maiores?
-                    Similique et aliquam ipsam, non architecto eaque nesciunt quae tempora? Aliquid quaerat possimus
-                    sapiente?</p>
+                <p>
+                    BusinessBot - персональный игровой помощник! 🎮
+                    <br>
+                    <br>
+                    Готов устроить тебе развлечения, будь то одиночный забег или вечеринка с друзьями! 🤍
+                    <br>
+                    <br>
+                    Хочешь узнать, на что я способен? Введи "🆘 Помощь" - и я открою все свои команды! ❄️
+                    <br>
+                    <br>
+                    ❗Внимание❗
+                    <br>
+                    <br>
+                    Начав игру в боте, вы даёте своё согласие с данными правилами.
+                    <br>
+                    Администрация бота не несёт ответственности за какие-либо происшествия, связанные с взаимоотношениями игроков. Наш бот включает в себя только развлекательную функцию для чатов в Telegram, все выигрыши являются символическими.                     
+                </p>
             </div>
-            <div class="card card-four">
+            <div class="card card-four" id="support">
                 <h2>Остались вопросы? Напишите нам!</h2>
                 <input type="text" id="name" placeholder="Ваше имя" required>
                 <textarea id="message" placeholder="Ваше сообщение" rows="4" required></textarea>
@@ -123,7 +142,5 @@
                 <div id="response"></div>
             </div>
         </div>
-    </div>
 </body>
-
 </html>
