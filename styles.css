@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Benzin';
-    src: url('/benzin.ttf') format('truetype');
+    src: url('/static/benzin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -165,6 +165,7 @@ input:focus, textarea:focus {
     text-align: center;
 }
 
+
 /* Mobile and Tablet Adaptation */
 @media (max-width: 1024px) {
     .main-buttons {
@@ -194,30 +195,47 @@ input:focus, textarea:focus {
     }
 }
 
+
 @media (max-width: 768px) {
-    .main-buttons button {
-        width: 90%;
-        font-size: 14px;
-        height: 50px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    textarea, input {
-        height: 50px;
+    .container {
+        padding-top: 20px;
     }
 
     .main img {
-        width: 120px;
+        width: 150px; 
+    }
+
+    .main-buttons button {
+        width: 160px;
+        height: 50px; 
+        font-size: 14px; 
+        margin-bottom: 20px; 
+    }
+
+    .card {
+        width: 90%; 
+        margin-bottom: 30px; 
+    }
+
+    .card-one, .card-two, .card-three, .card-four {
+        padding: 10px 15px;
+    }
+
+    input, textarea {
+        height: 50px;
+        font-size: 14px; 
     }
 
     .feedback-btn {
-        width: 70%;
-        height: 45px;
+        width: 60%;
+        height: 40px;
+    }
+
+    .info {
+        text-align: center; 
     }
 }
+
 
 @media (max-width: 480px) {
     .container {
