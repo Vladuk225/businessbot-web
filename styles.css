@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('benzin_font.css');
 
-
-.container {
-    max-width: 100%;
-    /* margin: auto; */
-    padding-top: 30px;
-    font-family: "Benzin", serif;
+@font-face {
+    font-family: 'Benzin';
+    src: url('/static/benzin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+.container {
+    font-family: 'Benzin', sans-serif;
+    max-width: 100%;
+    padding-top: 30px;
+}
 
 body {
     background: linear-gradient(135deg, #120136, #3500D3, #6C00FF, #9400D3);
@@ -18,31 +21,19 @@ body {
     color: #000000;
 }
 
-
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-
-@media (max-width: 700px) {
-    .info {
-        text-align: center;
-        display: block;
-    }
-}
-
-
 a {
     text-decoration: none;
 }
 
-
 .contacts ul {
     list-style: none;
 }
-
 
 .main-buttons {
     margin-top: 50px;
@@ -54,8 +45,8 @@ a {
     margin-bottom: 50px;
 }
 
-
 .main-buttons button {
+    margin-bottom: 30px;
     width: 200px;
     height: 60px;
     font-family: 'Benzin', serif;
@@ -69,12 +60,10 @@ a {
     box-shadow: 0 0 15px #FF00FF, 0 0 30px #8A2BE2;
 }
 
-
 .main-buttons button:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 25px #FF00FF, 0 0 50px #8A2BE2;
 }
-
 
 .main img {
     display: block;
@@ -86,11 +75,9 @@ a {
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
-
 .main h2 {
     color: #ffffff;
 }
-
 
 .card {
     margin: auto;
@@ -100,24 +87,20 @@ a {
     border-radius: 20px;
 }
 
-
 .card-one {
     background: linear-gradient(135deg, #00FF00, #00AA00);
     box-shadow: 0 0 10px #00FF00, 0 0 40px #00AA00, 0 0 80px #00FF00;
 }
-
 
 .card-two {
     background: linear-gradient(135deg, #00FFFF, #0044FF);
     box-shadow: 0 0 10px #00FFFF, 0 0 40px #0044FF, 0 0 80px #00FFFF;
 }
 
-
 .card-three {
     background: linear-gradient(135deg, #FFFF00, #FFA500);
     box-shadow: 0 0 10px #FFFF00, 0 0 40px #FFA500, 0 0 80px #FFFF00;
 }
-
 
 .card-four {
     width: 90%;
@@ -125,11 +108,9 @@ a {
     box-shadow: 0 0 10px #8A2BE2, 0 0 40px #9400D3, 0 0 80px #8A2BE2;
 }
 
-
 .card-three li {
     list-style-type: none;
 }
-
 
 textarea { 
     font-family: 'Benzin', sans-serif;
@@ -143,9 +124,7 @@ textarea {
     border-radius: 25px; 
     outline: none;
     box-shadow: 0 0 5px #8A2BE2, 0 0 10px #9400D3;
-
 }
-
 
 input { 
     font-family: 'Benzin', sans-serif;
@@ -159,15 +138,12 @@ input {
     border-radius: 25px; 
     outline: none;
     box-shadow: 0 0 5px #8A2BE2, 0 0 10px #9400D3;
-
 }
-
 
 input:focus, textarea:focus {
     box-shadow: 0 0 10px #9400D3, 0 0 20px #8A2BE2;
     border-color: #8A2BE2;
 }
-
 
 .feedback-btn {
     display: block;
@@ -185,7 +161,94 @@ input:focus, textarea:focus {
     margin-bottom: 40px;
 }
 
-
 #response {
     text-align: center;
+}
+
+/* Mobile and Tablet Adaptation */
+@media (max-width: 1024px) {
+    .main-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-buttons button {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .container {
+        padding-top: 20px;
+    }
+
+    .main img {
+        width: 150px;
+    }
+
+    .card-four {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-buttons button {
+        width: 90%;
+        font-size: 14px;
+        height: 50px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    textarea, input {
+        height: 50px;
+    }
+
+    .main img {
+        width: 120px;
+    }
+
+    .feedback-btn {
+        width: 70%;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 10px;
+    }
+
+    .main-buttons button {
+        width: 100%;
+        font-size: 12px;
+        height: 45px;
+    }
+
+    .main img {
+        width: 100px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .card-four {
+        width: 100%;
+    }
+
+    .feedback-btn {
+        width: 90%;
+        height: 40px;
+    }
+
+    .card-three li {
+        font-size: 14px;
+    }
 }
