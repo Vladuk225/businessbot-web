@@ -19,8 +19,8 @@ function sendFeedback() {
         return;
     }
 
-    const botToken = '6588209896:AAE7JyU39wruOlIesAr5UuEDRPoLpwLzrQg'; 
-    const chatId = '5960231383';
+    const botToken = 'your bot token'; 
+    const chatId = 'your telegram id';
 
     const text = `
 <b>Пришло новое уведомление с сайта</b> 🔔
